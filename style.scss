@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-Regular.ttf);
+}
+
+body{
+    padding: 1.5em 3em;
+    font-family: Nunito;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 40px
+}
+
+header{
+margin-bottom: 2em;
+    & ul{
+    display: flex;
+    justify-content: flex-end;
+    & li{
+        margin: 5px
+    }
+}}
+
+.nav ul{
+    display: flex;
+    align-items: stretch; 
+    & li{
+        width: 30vw;
+        padding: 30px;
+        border: solid #2a71d0 2px;
+        text-align: center;
+        background-color: #2a71d0;
+        font-size: 26px;
+        & a{
+            color: white;
+        }
+        &:nth-child(2){
+            background-color: white;
+            & a{
+                color: #2a71d0
+            }
+        }
+    } 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    gap: 2em 2em;
+    grid-template-areas:
+        "a d"
+        "b d"
+        "c d";
+}
+
+.ptwidget{
+    grid-area: a;
+    margin-top: 2em;
+}
+
+.logo{
+    grid-area: b;
+    justify-self: center;
+}
+
+.img{
+    grid-area: c;
+    justify-self: center;
+}
+
+.text{
+    grid-area: d;
+    & iframe{
+        display: block;
+        margin: 1.5em auto;
+    }
+}
+
+ul{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.form{
+    width: 60vw;
+    margin: 0 auto;
+    & textarea{
+        width: 60vw;
+        border: 2px #2a71d0 solid;
+        border-radius: 2px;
+        font-size: 20px;
+    }
+    & input{
+        width: 40vw;
+        font-size: 20px;
+        border: 2px #2a71d0 solid;
+        border-radius: 2px
+    }
+    & button{
+        padding: 0.8em;
+        font-size: 18px;
+        background-color: #2a71d0;
+        color: white
+    }
+}
+
+footer{
+    font-size: 12px;
+    & a{
+        color: #2a71d0
+    }
+}
+
+@media(max-width: 700px){
+    .container{
+        display: block
+    }
+    .text{
+        width: 90vw
+    }
+}

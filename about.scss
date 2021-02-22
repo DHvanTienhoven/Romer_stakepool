@@ -1,0 +1,45 @@
+.about-container{
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr 0.5fr ;
+    gap: 2em 2em;
+    grid-template-areas:
+        "a c"
+        "b c";
+}
+
+.secondary-nav{
+    grid-area: a;
+    padding-top: 2em;
+    padding-left: 4em;
+    font-size: 24px;
+    & span{
+        font-weight: 800;
+    }
+    & li{
+        cursor: pointer;
+        max-height: 1.4em;
+        overflow: hidden;
+        & ul{
+            margin-inline-start: 25px;
+        }
+    }
+    & .visible{
+        max-height: fit-content;
+        transition: 0.8s ease-in;
+    }
+}
+
+.text{
+    grid-area: c;
+}
+
+.logo{
+    grid-area: b
+}
+
+@media(max-width: 700px){
+    .about-container{
+        display: block
+    }
+}

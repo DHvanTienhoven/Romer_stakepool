@@ -1,0 +1,165 @@
+@font-face {
+  font-family: Nunito;
+  src: url(Nunito-Regular.ttf);
+}
+
+body {
+  padding: 1.5em 3em;
+  font-family: Nunito;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header ul li {
+  margin: 5px;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.nav ul li {
+  width: 30vw;
+  padding: 30px;
+  border: solid #2a71d0 2px;
+  text-align: center;
+  background-color: #2a71d0;
+  font-size: 26px;
+}
+
+.nav ul li a {
+  color: white;
+}
+
+.nav ul li:nth-child(2) {
+  background-color: white;
+}
+
+.nav ul li:nth-child(2) a {
+  color: #2a71d0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.8fr 1.2fr;
+      grid-template-columns: 0.8fr 1.2fr;
+  -ms-grid-rows: 0.2fr 1fr 1fr;
+      grid-template-rows: 0.2fr 1fr 1fr;
+  gap: 2em 2em;
+      grid-template-areas: "a d" "b d" "c d";
+}
+
+.ptwidget {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  margin-top: 2em;
+}
+
+.logo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: b;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.img {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: c;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: d;
+}
+
+.text iframe {
+  display: block;
+  margin: 1.5em auto;
+}
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.form textarea {
+  width: 60vw;
+  border: 2px #2a71d0 solid;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.form input {
+  width: 40vw;
+  font-size: 20px;
+  border: 2px #2a71d0 solid;
+  border-radius: 2px;
+}
+
+.form button {
+  padding: 0.8em;
+  font-size: 18px;
+  background-color: #2a71d0;
+  color: white;
+}
+
+footer {
+  font-size: 12px;
+}
+
+footer a {
+  color: #2a71d0;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: block;
+  }
+  .text {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

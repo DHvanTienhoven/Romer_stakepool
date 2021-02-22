@@ -1,0 +1,28 @@
+span.ptwidget {
+    font-size:xx-small;
+}
+img.ptwidget {
+    vertical-align:middle;
+    height: 20px;
+    width: 20px;
+}
+a.ptwidget {
+    color: #ffffff;
+}
+td.ptwidgetcenter {
+    text-align: center;
+}
+td.ptwidgetright {
+    text-align: right;
+}
+td.ptwidgetleft {
+    text-align: left;
+}
+table.ptwidget {
+    color: #ffffff;
+    background-color: rgb(63, 81, 181) !important;
+    border-radius: 15px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size:small;
+}
