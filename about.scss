@@ -13,15 +13,23 @@
     padding-top: 2em;
     padding-left: 4em;
     font-size: 24px;
-    & span{
+    & .title{
         font-weight: 800;
+        color: white;
+        background-color: #2a71d0;
+        padding: 0.8em
+    }
+    & .menu-item{
+        border: solid #2a71d0 2px;
     }
     & li{
         cursor: pointer;
-        max-height: 1.4em;
+        max-height: 1.2em;
         overflow: hidden;
+        
         & ul{
             margin-inline-start: 25px;
+            border: none;
         }
     }
     & .visible{

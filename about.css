@@ -20,17 +20,22 @@
 
 .secondary-nav span {
   font-weight: 800;
+  color: white;
+  background-color: #2a71d0;
+  padding: 0.8em;
 }
 
 .secondary-nav li {
   cursor: pointer;
-  max-height: 1.4em;
+  max-height: 1.2em;
   overflow: hidden;
+  border: solid #2a71d0 2px;
 }
 
 .secondary-nav li ul {
   -webkit-margin-start: 25px;
           margin-inline-start: 25px;
+  border: none;
 }
 
 .secondary-nav .visible {
